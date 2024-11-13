@@ -1,0 +1,65 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/nuria-site-main/assets/img/background-principal.png");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+}
+
+#inicio-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conheca-nuria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 37%;
+}
+
+.conheca-nuria h1{
+    color: #57415D;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.conheca-nuria span{
+    color: #D79393;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.conheca-nuria h4 {
+    color: #57415D;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.cadastro-gratuito {
+    border: none;
+    border-radius: 50px;
+    background-color: #FFF9F6;
+    width: 40%;
+    height: 45px;
+    color: #57415D;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: ease 0.3s;
+}
+
+.cadastro-gratuito:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -20px 36px -18px inset;
+}
+
+.celular img {
+    width: 600px;
+    height: auto;
+}
