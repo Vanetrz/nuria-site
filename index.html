@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/inicio.css">
     <link rel="stylesheet" href="assets/css/funcionalidades.css">
+    <link rel="stylesheet" href="assets/css/oferecemos.css">
     <script src="assets/js/script.js" defer></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -55,26 +56,24 @@
         </nav>
     </header>
 
-    <section class="geral">
-        <main>
-            <section class="inicio">
-                <div id="inicio-div">
-                    <div class="conheca-nuria">
-                        <h1>Conheça mais sobre nosso aplicativo <span> Núria</span>!</h1>
-        
-                        <h4>Organize seus planos, sua vida pessoal e profissional e seus estudos de forma simples e rápida.</h4>
-        
-                        <button class="cadastro-gratuito">Cadastre-se gratuitamente</button>
-                    </div>
-                    
-                    <div class="celular">
-                        <img src="assets/img/prototipo.svg" alt="">
-                    </div>
-                </div>
+    <main class="geral">
+        <section class="inicio">
+            <div id="inicio-div">
+                <div class="conheca-nuria">
+                    <h1>Conheça mais sobre nosso aplicativo <span> Núria</span>!</h1>
     
-                <i class="fa-solid fa-chevron-down" style="color: #836e8b; "></i>
-            </section>
-        </main>
+                    <h4>Organize seus planos, sua vida pessoal e profissional e seus estudos de forma simples e rápida.</h4>
+    
+                    <button class="cadastro-gratuito">Cadastre-se gratuitamente</button>
+                </div>
+                
+                <div class="celular">
+                    <img src="assets/img/prototipo.svg" alt="">
+                </div>
+            </div>
+
+            <i class="fa-solid fa-chevron-down" style="color: #836e8b; "></i>
+        </section>
     
         <section class="funcionalidades">
             <h1>Nossas Funcionalidades</h1>
@@ -87,9 +86,55 @@
                 </div>
                 <button id="next-button"><img src="./assets/img/arrow.png" alt="next-button"></button>
             </div>
-
         </section>
-    </section>
-    
+
+        <section class="oferecemos">
+            <h1>O Que Oferecemos?</h1>
+
+            <div id="oferecemos-container">
+                <div id="oferecemos-lista">
+                    <div id="oferecemos-items">
+                        <img src="assets/img/notes.svg" alt="Icone de Anotações">
+                        <div id="oferecemos-div"> 
+                            <h4>Gerenciamento de Atividades</h4>
+                            <p>Organize suas atividades de forma simples e eficiente através de uma interface intuitiva e de fácil navegação.</p>
+                        </div>
+                    </div>
+
+                    <div id="divider"></div>
+
+                    <div id="oferecemos-items">
+                        <img src="assets/img/star.svg" alt="Icone de Anotações">
+                        <div id="oferecemos-div">
+                            <h4>Desempenho Individual</h4>
+                            <p>Acompanha o desempenho semanal e mensal de maneira detalhada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="divider2"></div>
+
+                <div id="oferecemos-lista">
+                    <div id="oferecemos-items">
+                        <img src="assets/img/time.svg" alt="Icone de Anotações">
+                        <div id="oferecemos-div">
+                            <h4>Gestão de Tempo</h4>
+                            <p>A administração do tempo favorece uma utilização mais eficiente do tempo disponível.</p>
+                        </div>
+                    </div>
+
+                    <div id="divider"></div>
+
+                    <div id="oferecemos-items">
+                        <img src="assets/img/fire.svg" alt="Icone de Anotações">
+                        <div id="oferecemos-div">
+                            <h4>Maior Produtividade</h4>
+                            <p>Impulsiona a conclusão de tarefas com maior velocidade, foco e eficiência, aumentando a produtividade geral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
