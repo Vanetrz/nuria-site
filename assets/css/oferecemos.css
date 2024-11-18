@@ -51,12 +51,12 @@
 #divider {
     margin-left: 50px;
     margin-right: 50px;
-    border: 0.1rem solid #996B5C;
+    border-left: 0.1rem solid #996B5C;
 }
 
 #divider2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 1px solid #996B5C;
-    width: 80%;
+    border-bottom: 1px solid #996B5C;
+    width: 82%;
 }
