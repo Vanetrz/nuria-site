@@ -1,9 +1,9 @@
 .funcionalidades {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0px 300px 0px 300px;
 }
 
 /* TITULO */
@@ -12,27 +12,41 @@
     font-size: 50px;
     color: #57415D;
     font-weight: 600;
-    justify-content: center;
-    align-items: center;
+    align-self: flex-start;
 }
 
 /* CARROSSEL */
 
 .carrossel {
     display: flex;
-    width: 100%;
+    width: 50%;
     min-height: 100vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .container-img {
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 293px;
+}
+
+.container-img img {
+    width: 320px;
     height: 634px;
+}
+
+.container-img-geral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .imagens {
@@ -42,6 +56,30 @@
     width: 293px;
     height: 634px;
     border-radius: 30px;
+
+    filter: drop-shadow(0 0 10rem #ddc1a99d);
+    box-shadow: 1px 1px 10rem #ddc1a99d;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #94849D;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #94849D;
+    width: 450px;
 }
 
 .on {
@@ -49,16 +87,18 @@
 }
 
 #back-button, #next-button {
+    z-index: 999;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     width: 40px;
     height: 40px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 }
 
 #back-button img, #next-button img {
     width: 100%;
     height: 100%;
+    margin-left: 200px;
 }
 
 #back-button {

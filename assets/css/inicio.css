@@ -2,24 +2,45 @@
     display: flex;
     flex-direction: column;
     background-image: url("../img/background-principal.png");
+    box-shadow: inset 0px -160px 100px -10px #FFF9F6;
     background-size: cover;
     align-items: center;
     justify-content: center;
     height: 900px;
 }
 
+#seta {
+    width: 45px;
+    margin-top: 50px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 #inicio-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0px 300px 0px 300px;
 }
 
 .conheca-nuria {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 37%;
+    width: 45%;
 }
 
 .conheca-nuria h1{
@@ -44,7 +65,7 @@
     border: none;
     border-radius: 50px;
     background-color: #FFF9F6;
-    width: 40%;
+    width: 45%;
     height: 45px;
     color: #57415D;
     font-weight: 600;
@@ -59,7 +80,7 @@
 }
 
 .celular img {
-    width: 600px;
+    width: 549px;
     height: auto;
 }
 

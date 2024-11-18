@@ -1,5 +1,6 @@
 // carrossel
 const imagens = document.querySelectorAll('.imagens');
+const text = document.querySelectorAll('.text');
 const btnBack = document.getElementById('back-button');
 const btnNext = document.getElementById('next-button');
 
@@ -9,11 +10,13 @@ let currentSlide = 0;
 // função de esconder o carrossel
 function hideImagens () {
     imagens.forEach(item => item.classList.remove('on'))
+    text.forEach(item => item.classList.remove('on'))
 }
 
 // função de mostrar o carrossel
 function showImagens() {
     imagens[currentSlide].classList.add('on')
+    text[currentSlide].classList.add('on')
 }
 
 // função de avançar
