@@ -14,3 +14,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#element-blur img {
+    position: absolute;
+    right: 0px;
+    margin-top: -500px;
+}
+
+.element {
+    z-index: 998;
+    position: absolute;
+    left: 0;
+    margin-top: 700px;
+}
