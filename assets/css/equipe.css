@@ -1,0 +1,82 @@
+.titulo-equipe {
+    display: flex;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.titulo-equipe h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #57415D;
+}
+
+.titulo-equipe span {
+    font-weight: 700;
+}
+
+.equipe-geral1, .equipe-geral2{
+    display: flex;
+    flex-direction: row;
+
+    padding: 25px;
+    gap: 90px;
+}
+
+.equipe-geral1 img{
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: auto;
+}
+
+.equipe-geral1 h3{
+    font-size: 20px;
+    padding: 7px 0px 4px 0px;
+}
+
+.equipe-geral1 p {
+    font-size: 15px;
+    border-color: #57415D;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 3px 8px 3px 8px;
+}
+
+.equipe-geral2 img {
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.equipe-geral2 h3{
+    font-size: 20px;
+    padding: 7px 0px 4px 0px;
+}
+
+.equipe-geral2 p {
+    font-size: 15px;
+    border-color: #57415D;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 3px 8px 3px 8px;
+}
+
+#pedrinho, #iago, #luis, #md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #57415D;
+}
+
+#vanessa, #luca, #giulia, #vini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #57415D;
+}
