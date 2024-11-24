@@ -1,0 +1,42 @@
+.cont-func {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.funcionalidade-geral h1 {
+    font-size: 50px;
+}
+
+.funcionalidade-geral span {
+    background: linear-gradient(to right, #B174C2, #EACFBA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#funcao {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 40px;
+    border: 1px solid #94849D;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .15);
+}
+
+#funcao img {
+    width: 110px;
+    height: auto;
+}
+
+#funcao h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+#funcao p {
+    font-size: 18px;
+    color: #94849D;
+}
