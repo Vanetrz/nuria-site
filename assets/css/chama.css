@@ -1,0 +1,26 @@
+.chama-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chama img {
+    width: 1400px;
+    height: 853px;
+}
+
+#chama h1 {
+    font-size: 45px;
+}
+
+#chama span {
+    background: linear-gradient(to right, #B174C2, #EACFBA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

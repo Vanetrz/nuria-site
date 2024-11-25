@@ -1,0 +1,55 @@
+.embreve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    gap: 50px;
+    width: 100%;
+}
+
+.embreve span {
+    background: linear-gradient(to right, #B174C2, #EACFBA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.embreve-direito img {
+    width: 1300px;
+    height: auto;
+}
+
+.embreve-esquerdo h1{
+    font-size: 70px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.embreve-esquerdo .nome-nuria{
+    font-size: 85px;
+    margin-top: 10px;
+}
+
+.embreve-direito img {
+    height: auto;
+    border-radius: 20px;
+}
+
+#por-dentro {
+    background: linear-gradient(to right, #B174C2, #EACFBA);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+
+    border: none;
+    box-shadow: 1px ;
+    border-radius: 30px;
+    cursor: pointer;
+
+    margin-top: 20px;
+    padding: 15px 30px;
+    
+}
+
+.embreve-esquerdo{
+    justify-content: center;
+}

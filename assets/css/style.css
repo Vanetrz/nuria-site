@@ -27,3 +27,30 @@ body {
     left: 0;
     margin-top: 700px;
 }
+
+#seta-cima {
+    position: fixed;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding-left: 70px;
+}
+
+#seta-cima img {
+    width: 40px;
+    height: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #dddddd;
+    border: 5px solid #FFF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #57415D;
+    border-radius: 10px;
+    border: 2px solid #FFF9F6;
+}

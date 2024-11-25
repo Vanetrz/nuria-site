@@ -1,12 +1,29 @@
+.funcionalidade-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo-funcionalidade {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1190px;
+    width: 100%;
+    padding: 220px 0 80px 0;
+}
+
+#titulo-funcionalidade h1 {
+    font-size: 50px;
+}
+
 .cont-func {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.funcionalidade-geral h1 {
-    font-size: 50px;
+    gap: 67px;
 }
 
 .funcionalidade-geral span {
@@ -16,8 +33,13 @@
 }
 
 #funcao {
-    width: 400px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    width: 350px;
+    height: 320px;
     background-color: white;
     border-radius: 30px;
     padding: 40px;
@@ -25,18 +47,33 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .15);
 }
 
-#funcao img {
-    width: 110px;
+.vela {
+    width: 55px;
     height: auto;
+    margin-top: -40px;
+}
+
+.personalizar {
+    width: 80px;
+    height: auto;
+    margin-top: -12px;
+}
+
+.xpnuria {
+    width: 80px;
+    height: auto;
+    margin-top: -12px;
 }
 
 #funcao h3 {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
+    padding: 20px 0 12px 0;
 }
 
 #funcao p {
     font-size: 18px;
+    font-weight: 500;
     color: #94849D;
 }

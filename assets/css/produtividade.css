@@ -1,8 +1,3 @@
-/* Estilo Geral */
-section {
-    padding: 40px;
-}
-
 .produtividade {
     display: flex;
     flex-direction: row;
@@ -11,6 +6,7 @@ section {
     gap: 50px; 
     margin-top: 80px;
     max-width: 14000px;
+    padding-top: 200px
 }
 
 .produtividade span {
@@ -20,7 +16,7 @@ section {
 }
 
 .produtividade-esquerda img {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     border-radius: 20px;
 }
@@ -36,7 +32,7 @@ section {
 .produtividade-direita h1 {
     font-size: 50px;
     line-height: 1.2;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .produtividade-direita p {
@@ -52,3 +48,72 @@ section {
     height: auto;
 }
 
+#caderno-title {
+    display: flex;
+    align-items: stretch;
+    margin-top: 250px;
+}
+
+#caderno-title h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#caderno-title span {
+    background: linear-gradient(to right, #B174C2, #EACFBA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#caderno-title img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.caderno-geral {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#caderno-esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+#caderno-esquerda h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    width: 650px;
+}
+
+#caderno-esquerda span {
+    background: linear-gradient(to right, #B174C2, #EACFBA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#caderno-esquerda p {
+    color: #94849D;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 50px; 
+}
+
+#caderno-img {
+    display: flex;
+    align-self: flex-start;
+    gap: 20px;
+}
+
+#caderno-img img{
+    width: 250px;
+    height: auto;
+}
+
+#slide-caderno img {
+    width: 550px;
+    height: auto;
+}
