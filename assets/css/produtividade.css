@@ -1,4 +1,4 @@
-.produtividade {
+#produtividade {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,7 +9,7 @@
     padding-top: 200px
 }
 
-.produtividade span {
+#produtividade span {
     background: linear-gradient(to right, #B174C2, #EACFBA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,7 +70,7 @@
     margin-left: 10px;
 }
 
-.caderno-geral {
+#caderno-geral {
     display: flex;
     margin-top: 100px;
     margin-bottom: 200px;

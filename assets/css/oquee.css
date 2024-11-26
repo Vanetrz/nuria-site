@@ -1,4 +1,4 @@
-.oq-nuria {
+#oquee {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,7 +13,7 @@
     margin-top: 110px;
 }
 
-.info-nuria {
+#info-nuria {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,18 +21,18 @@
     
 }
 
-.info-nuria h1 {
+#info-nuria h1 {
     font-size: 50px;
     padding-bottom: 25px;
 }
 
-.info-nuria span {
+#info-nuria span {
     background: linear-gradient(to right, #B174C2, #EACFBA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.info-nuria p {
+#info-nuria p {
     font-size: 24px;
     color: #94849D;
     font-weight: 500;

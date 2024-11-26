@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="assets/css/chama.css">
     <link rel="stylesheet" href="assets/css/breve.css">
 
-    <script src="assets/js/script.js" defer></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -80,7 +78,11 @@
     
                     <h4>Organize seus planos, sua vida pessoal e profissional e seus estudos de forma simples e rápida.</h4>
     
-                    <button class="cadastro-gratuito">Cadastre-se gratuitamente</button>
+                    <div class="conheca-nuria2">
+                        <p>Se interessou?</p>
+                        <button class="contato-cadastro">Entre em contato!</button>
+                    </div>
+                    
                 </div>
                 
                 <div class="celular">
@@ -93,8 +95,8 @@
 
         <!-- NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA NURIA -->
         <section>
-            <div class="oq-nuria">
-                <div class="info-nuria">
+            <div id="oquee">
+                <div id="info-nuria">
                     <h1>O que é o <span>Núria?</span></h1>
                     <p>Núria é a plataforma de organização estudantil que combina planejamento, caderno digital e
                     gamificação para otimizar a rotina de estudantes de todos os níveis. Com ferramentas como Pomodoro
@@ -112,18 +114,18 @@
                 <img src="assets/img/Núria feliz.svg" alt="Emoji">
             </div>
 
-            <div class="caderno-geral">
+            <div id="caderno-geral">
                 <div id="caderno-esquerda">
                     <h1>Faça anotações criando no seu <span>CADERNO</span></h1>
                     <p>Monitore sua produtividade com <br> o score diário, uma pontuação <br> que reflete o seu desempenho <br> ao longo do dia.</p>
                     <div id="caderno-img">
-                        <img src="assets/img/caderno.png" alt="Caderno">
-                        <img src="assets/img/anotacoes.png" alt="Anotações">
+                        <img id="caderno-select" src="assets/img/caderno_roxo.png" alt="Caderno" onclick="caderno_select()">
+                        <img id="anotacoes-select" src="assets/img/anotacoes_branco.png" alt="Anotações" onclick="anotacoes_select()">
                     </div>
                 </div>
 
                 <div id="slide-caderno">
-                    <img src="assets/img/caderno-grande.png" alt="">
+                    <img id="imagem-grande" src="assets/img/caderno-grande.png" alt="">
                     <img src="assets/img/anotacao-grande.png" alt="" style="display: none;">
                 </div>
             </div>
@@ -138,9 +140,9 @@
                     intuitiva que permite visualizar tarefas diárias, semanais ou mensais de maneira
                     clara e personalizada.</p>
                 </div>
-                <img src="assets/img/planner.png" alt="">
+                <img id="image-planner" src="assets/img/planner.png" alt="">
     
-                <div class="container-planner">
+                <div class="container-planner" onclick="planner_desempenho()">
                     <div class="desempenho-cont">
                         <img src="assets/img/pczinho.png" alt="">
                         <div id="info-cont">
@@ -150,14 +152,14 @@
                         </div>
                         
                     </div>
-                    <div class="filtros">
+                    <div class="filtros" onclick="planner_inteligente()">
                         <img src="assets/img/notinha.png" alt="">
                         <div id="info-cont">
                             <h3>Filtros Inteligentes</h3>
                             <p>Encontre facilmente qualquer tarefa com o sistema de filtros dinâmicos.</p>
                         </div>
                     </div>
-                    <div class="caderno-digital">
+                    <div class="caderno-digital" onclick="planner_integracao()">
                         <img src="assets/img/notinha.png" alt="">
                         <div id="info-cont">
                             <h3>Integração com o Caderno <br> Digital</h3>
@@ -178,7 +180,7 @@
         <!-- DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO -->
         
         <section>
-            <div class="desempenho-geral">
+            <div id="desempenho-geral">
                 <div class="info-desempenho">
                     <h1>Acompanhe seu desempenho <br><span>individual</span></h1>
                     <p>Acompanhe seu progresso com gráficos detalhados de desempenho semanal e mensal,
@@ -194,7 +196,7 @@
         <!-- PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE PRODUTIVIDADE -->
 
         <section>
-            <div class="produtividade">
+            <div id="produtividade">
                 <div class="produtividade-esquerda">
                     <img src="assets/img/produtividade.png" alt="" width="720px" height="758px">
                 </div>
@@ -209,7 +211,7 @@
 
         <!-- MAIS FUNCIONALIDADES MAIS FUNCIONALIDADES MAIS FUNCIONALIDADES MAIS FUNCIONALIDADES MAIS FUNCIONALIDADES MAIS FUNCIONALIDADES -->
         <section>
-            <div class="funcionalidade-geral">
+            <div id="funcionalidade-geral">
                 <div id="titulo-funcionalidade">
                     <h1>Mais <span>funcionalidades</span></h1>
                 </div>
@@ -237,13 +239,15 @@
 
         <section>
             <div class="embreve">
+                
                 <div class="embreve-esquerdo">
                     <h1><span>EM BREVE</span><Br>o seu App</h1>
                     <h1 class="nome-nuria"><span>NÚRIA!</span></h1>
                      <button id="por-dentro">Fique por dentro</button>
                 </div>
                 <div class="embreve-direito">
-                    <img src="assets/img/celular.png" alt="" >
+                    <img src="assets/img/celular.png" alt="" id="celular">
+                   <!-- <img src="assets/img/blur.png" alt="" id="blur"> -->
                 </div>
             </div>
         </section>
@@ -515,6 +519,7 @@
             </div>
         </section>
 
+        <!-- FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER -->
         <footer>
            
             <div class="container">
@@ -539,10 +544,13 @@
     
                     <ul id="topico">
                         <h4>Início</h4>
-                        <li><a href="#">Funcionalidades</a></li>
-                        <li><a href="#">O que oferecemos?</a></li>
-                        <li><a href="#">Usuários</a></li>
-                        <li><a href="#">Equipe</a></li>
+                        <li><a href="#oquee">O que é</a></li>
+                        <li><a href="#caderno-title">Caderno</a></li>
+                        <li><a href="#planner">Planner</a></li>
+                        <li><a href="#desempenho-geral">Desempenho</a></li>
+                        <li><a href="#produtividade">Produtividade</a></li>
+                        <li><a href="#funcionalidade-geral">Mais Funcionalidades</a></li>
+                        <li><a href="#socios">Equipe</a></li>
                     </ul>
 
                     <!-- <ul id="topico">
@@ -594,5 +602,7 @@
 
         </footer>
     </main>
+
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>

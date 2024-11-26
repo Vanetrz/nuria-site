@@ -61,11 +61,21 @@
     font-weight: 500;
 }
 
-.cadastro-gratuito {
+.conheca-nuria2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.conheca-nuria2 p {
+    font-size: 15px;
+}
+
+.contato-cadastro {
     border: none;
     border-radius: 50px;
     background-color: #FFF9F6;
-    width: 45%;
+    width: 35%;
     height: 45px;
     color: #57415D;
     font-weight: 600;
@@ -75,7 +85,7 @@
     transition: ease 0.3s;
 }
 
-.cadastro-gratuito:hover {
+.contato-cadastro:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px -20px 36px -18px inset;
 }
 
