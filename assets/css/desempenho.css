@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1400px;
+    max-width: 1320px;
     width: 100%;
 }
 
@@ -33,7 +33,7 @@
 }
 
 #desempenho img {
-    width: 1400px;
+    width: 1320px;
     height: auto;
 }
 

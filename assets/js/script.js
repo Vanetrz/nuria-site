@@ -84,3 +84,122 @@ function planner_integracao()
     imagem_grande.src = "assets/img/calendario.gif";
     imagem_grande.style.height = "754px";
 }
+
+
+// Animações
+ScrollReveal().reveal('.conheca-nuria', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%',
+})
+
+ScrollReveal().reveal('#oquee', {
+    opacity: 0,
+    duration: 2000,
+    scale: 1.1
+})
+
+ScrollReveal().reveal('#info-nuria', {
+    origin: 'left',
+    distance: '15%',
+    duration: 1000
+})
+
+ScrollReveal().reveal('#nurinha', {
+    origin: 'right', 
+    distance: '15%',
+    duration: 1000
+})
+
+ScrollReveal().reveal('#caderno-esquerda p', {
+    origin: 'left',
+    distance: '15%',
+    duration: 2000
+})
+
+ScrollReveal().reveal('#caderno-img', {
+    origin: 'bottom',
+    distance: '30%',
+    duration: 2000,
+    interval: 300
+})
+
+ScrollReveal().reveal('#slide-caderno', {
+    origin: 'right',
+    distance: '15%',
+    duration: 2000
+})
+
+ScrollReveal().reveal('.info-planner p', {
+    origin: 'left',
+    distance: '15%',
+    duration: 1000,
+    opacity: 0
+})
+
+ScrollReveal().reveal('.container-planner', {
+    origin: 'right',
+    distance: '15%',
+    duration: 2000,
+    interval: 100
+})
+
+ScrollReveal().reveal('.chama-geral', {
+    opacity: 0,
+    scale: 0.85,
+    duration: 2000
+})
+
+ScrollReveal().reveal('.info-desempenho p', {
+    origin: 'left',
+    distance: '20%',
+    duration: 2000
+})
+
+ScrollReveal().reveal('#desempenho img', {
+    origin: 'bottom',
+    distance: '25%',
+    duration: 2000
+})
+
+ScrollReveal().reveal('.produtividade-esquerda', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+})
+
+ScrollReveal().reveal('.produtividade-direita p', {
+    origin: 'right',
+    duration: 2000,
+    distance: '20%'
+})
+
+ScrollReveal().reveal('#funcao', {
+    origin: 'bottom',
+    distance: '20%',
+    duration: 2000,
+    interval: 100
+})
+
+ScrollReveal().reveal('.socios-linha1', {
+    origin: 'left',
+    distance: '20%',
+    duration: 2000,
+    interval: 100
+})
+
+ScrollReveal().reveal('.embreve-esquerdo', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+})
+
+ScrollReveal().reveal('.embreve-direito', {
+    opacity: 0,
+    duration: 2000
+})
+
+ScrollReveal().reveal('#ultimo-divider', {
+    opacity: 0,
+    duration: 2000,
+})
