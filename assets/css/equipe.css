@@ -126,3 +126,8 @@
     font-weight: 400;
     font-size: 15px;
 }
+
+.cargo-senior{
+    min-width: 130px;
+    text-align: center;
+}

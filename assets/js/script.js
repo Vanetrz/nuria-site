@@ -191,7 +191,7 @@ ScrollReveal().reveal('.socios-linha1', {
 ScrollReveal().reveal('.embreve-esquerdo', {
     origin: 'left',
     duration: 2000,
-    distance: '20%'
+    distance: '21%'
 })
 
 ScrollReveal().reveal('.embreve-direito', {
