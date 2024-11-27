@@ -83,3 +83,101 @@ header {
 #cadastro:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+
+
+/*ESTILO DO MENU MOBILE*/
+
+#mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000; 
+    gap: 30px; 
+}
+
+
+#mobile-menu.active {
+    display: flex;
+}
+
+#mobile-menu button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding: auto   ;
+    
+}
+
+#mobile-menu .nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#mobile-menu .nav-item a:hover {
+    color: #007BFF;
+}
+
+#divider-menu {
+    border-top: 1px solid #9A8D9E;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+
+@media screen and (max-width: 1170px) {
+    #nav-list {
+        display: none;
+    }
+
+    #btn-menu {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #816E8B;
+        cursor: pointer;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #007BFF;
+}
+
+.close-btn i {
+    font-size: 2rem;
+}

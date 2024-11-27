@@ -9,10 +9,11 @@
 }
 .info-geral {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    justify-items: center;
+    align-self: auto;
     padding: 85px 0px 30px 150px;
     gap: 100px; 
+    margin-right: 500px;
 }
 
 .logo-nome {
@@ -113,6 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
 }
 
 .final-footer .antes-divider{
@@ -129,3 +131,20 @@
     margin-top: 8px;
 }
 
+#contato-email{
+    color: #57415D;
+    font-size: 15px;
+    font-weight: 600;
+
+    border: none;
+    box-shadow: 1px ;
+    border-radius: 30px;
+    cursor: pointer;
+
+    margin-top: 15px;
+    padding: 8px 20px;
+}
+
+.contato1{
+    flex-direction: column;
+}

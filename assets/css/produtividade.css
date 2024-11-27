@@ -117,3 +117,40 @@
     width: 550px;
     height: auto;
 }
+
+#caderno-img img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    #caderno-geral {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #caderno-title h1 {
+        font-size: 32px;
+    }
+
+    #caderno-esquerda h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    #caderno-esquerda p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #caderno-img img {
+        width: 150px;
+    }
+
+    #slide-caderno img {
+        width: 100%;
+    }
+}

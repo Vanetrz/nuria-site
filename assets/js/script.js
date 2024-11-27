@@ -1,4 +1,3 @@
-// seta para baixo
 const seta = document.querySelector('#seta')
 const carregaimg = ["assets/img/anotacao_branco.png", "assets/img/caderno_roxo.png", "assets/img/anotacao_roxo.png", "assets/img/caderno_branco.png"];
 
@@ -39,7 +38,7 @@ function caderno_select()
     anotacoes_select.src = "assets/img/anotacoes_branco.png";
     caderno_select.src = "assets/img/caderno_roxo.png";
 
-    imagem_grande.src = "assets/img/caderno-grande.png";
+    imagem_grande.src = "assets/img/urbanização.gif";
 
     modo_caderno_anotacao = caderno; 
 }
@@ -69,24 +68,146 @@ var modo_planner = desempenho;
 
 function planner_desempenho()
 {
+    //Desempenho
     imagem_grande.src = "assets/img/planner.gif";
     imagem_grande.style.height = "754px";
+
+    //------STYLE MOMENTS-------
+    ///AVISO!!! OS ELEMENTOS ESTÃO SENDO REQUISITADOS PELO NOME DO ID!!!! NÃO ESQUECER POR FAVOR!
+    let button_desempenho = document.getElementById("button-desempenho");
+    let button_filtros = document.getElementById("button-filtro");
+    let button_caderno = document.getElementById("button-caderno");
+
+    //Alterando a si mesmo
+    button_desempenho.style.opacity = "1";
+    button_desempenho.style.transform = "scale(1)";
+
+    //Alterando os outros!
+    button_filtros.style.opacity = "0.4";
+    button_filtros.style.transform = "scale(0.95)";
+
+    button_caderno.style.opacity = "0.4"; 
+    button_caderno.style.transform = "scale(0.95)";
+
+    //Setando o select como true para ele não alterar mais!
+    select = true;
 }
 
 function planner_inteligente()
 {
-    imagem_grande.src = "assets/img/filtrar.gif";
+    //Filtrar
+    imagem_grande.src = "assets/img/animacao.gif";
     imagem_grande.style.height = "754px";
+    
+
+    //------STYLE MOMENTS-------
+    ///AVISO!!! OS ELEMENTOS ESTÃO SENDO REQUISITADOS PELO NOME DO ID!!!! NÃO ESQUECER POR FAVOR!
+    let button_desempenho = document.getElementById("button-desempenho");
+    let button_filtros = document.getElementById("button-filtro");
+    let button_caderno = document.getElementById("button-caderno");
+
+    //Alterando o seu proprio!
+    button_filtros.style.opacity = "1";
+    button_filtros.style.transform = "scale(1)";
+
+    //Alterando os outros!
+    button_desempenho.style.opacity = "0.4";
+    button_desempenho.style.transform = "scale(0.95)";
+
+    button_caderno.style.opacity = "0.4";
+    button_caderno.style.transform = "scale(0.95)";
+
+    //Setando o select como true para ele não alterar mais!
+    select = true;
 }
 
 function planner_integracao()
 {
+    //Calendario
     imagem_grande.src = "assets/img/calendario.gif";
     imagem_grande.style.height = "754px";
+
+    //------STYLE MOMENTS-------
+    ///AVISO!!! OS ELEMENTOS ESTÃO SENDO REQUISITADOS PELO NOME DO ID!!!! NÃO ESQUECER POR FAVOR!
+    let button_desempenho = document.getElementById("button-desempenho");
+    let button_filtros = document.getElementById("button-filtro");
+    let button_caderno = document.getElementById("button-caderno");
+
+    //Alterando a si mesmo
+    button_caderno.style.opacity = "1";
+    button_caderno.style.transform = "scale(1)";
+
+    //Alterando os outros
+    button_desempenho.style.opacity = " 0.4";
+    button_desempenho.style.transform = "scale(0.95)";
+
+    button_filtros.style.opacity = "0.4";
+    button_filtros.style.transform = "scale(0.95)";
+
+    //Setando o select como true para ele não alterar mais!
+    select = true;
 }
 
 
-// Animações
+
+
+
+
+
+
+
+
+
+///SUBSTITUIÇÃO DO HOVER CSS ABAIXO. NÃO TOCAR!!!!!!!!!!!!!!
+var select = false;
+
+function planner_button_hover(nome)
+{
+    //Função HOVER
+    if(select) return;
+
+    let nomes = [document.getElementById("button-desempenho"), document.getElementById("button-filtro"), document.getElementById("button-caderno")];
+    let element = document.getElementById(nome);
+
+    //ANIM
+    for(var i=0; i<nomes.length; i++)
+    {
+        let select = nomes[i];
+        if(select != element)
+        {
+            nomes[i].style.opacity = "0.4";
+            nomes[i].style.transform = "scale(0.95)";
+        }
+    }
+    
+}
+
+function planner_button_nohover(nome)
+{
+    //Função HOVER
+    if(select) return;
+
+    let nomes = [document.getElementById("button-desempenho"), document.getElementById("button-filtro"), document.getElementById("button-caderno")];
+
+    //ANIM
+    for(var i=0; i<nomes.length; i++)
+    {
+        nomes[i].style.opacity = "1";
+        nomes[i].style.transform = "scale(1)";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//ANIMAÇÕESS
 ScrollReveal().reveal('.conheca-nuria', {
     origin: 'left',
     duration: 2000,
@@ -203,3 +324,27 @@ ScrollReveal().reveal('#ultimo-divider', {
     opacity: 0,
     duration: 2000,
 })
+
+
+/*JAVA SCRIPT DO HEADER */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btnMenu = document.getElementById('btn-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    btnMenu.addEventListener('click', function () {
+        mobileMenu.classList.add('active');
+    });
+
+    closeMenu.addEventListener('click', function () {
+        mobileMenu.classList.remove('active');
+    });
+
+    const navLinks = document.querySelectorAll('#mobile-nav-list .nav-item a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.remove('active');
+        });
+    });
+});

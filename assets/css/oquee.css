@@ -5,25 +5,29 @@
     justify-content: center;
 
     border: 1px solid #806D86;
-    width: 1200px;
-    height: 450px;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
     border-radius: 30px;
+    padding: 20px;
 
     margin: 0 auto;
-    margin-top: 110px;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #info-nuria {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 700px;
     padding-right: 20px;
-    
 }
 
 #info-nuria h1 {
-    font-size: 50px;
-    padding-bottom: 25px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 #info-nuria span {
@@ -33,9 +37,41 @@
 }
 
 #info-nuria p {
-    font-size: 24px;
+    font-size: 1.2rem;
     color: #94849D;
     font-weight: 500;
-    width: 750px;
-    line-height: 2rem;
+    line-height: 1.8rem;
+}
+
+#nurinha {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #oquee {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #info-nuria {
+        padding-right: 0;
+    }
+
+    #info-nuria h1 {
+        font-size: 2rem;
+    }
+
+    #info-nuria p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #nurinha {
+        max-width: 200px;
+        margin-top: 20px;
+    }
 }

@@ -1,0 +1,134 @@
+.formulario-div {
+    display: flex;
+    flex-direction: column;
+
+
+background-image: url("imgs/Group\ 46661.png");
+background-size:  cover;
+
+position: absolute;
+width: 2347.34px;
+height: 1238.38px;
+left: -213px;
+top: 58px;
+
+
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formulario-titulo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formulario-titulo h1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#forms-brilho {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    color: #94849D;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+}
+
+#messager{
+    background-color: transparent;
+    border: 1px solid #111111;
+    border-radius: 15px;
+    padding: 15px;
+
+    font-family: Poppins;
+    transition: all 0.2s;
+}
+
+form input{
+    background-color: transparent;
+    border: 1px solid #111111;
+    border-radius: 50000px;
+    padding: 15px;
+
+    font-family: Poppins;
+    transition: all 0.2s;
+}
+
+form input:hover {
+    border: 1px solid #94849D;
+}
+
+textarea {
+    margin-top: 20px;
+    height: 200px;
+    resize: none;
+}
+
+textarea:hover {
+    border: 1px solid #94849D;
+}
+
+.btn-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-enviar button {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    width: 200px;
+    height: 50px;
+
+    background: linear-gradient(85deg, #b174c2 0%, #eacfba 100%);
+    border: 0px solid transparent;
+    border-radius: 5000px;
+
+    cursor: pointer;
+    transition: ease 0.2s;
+
+    margin-bottom: 80px;
+}
+
+.btn-enviar button:hover {
+    border-radius: 5000px;
+    background: linear-gradient(90deg, #b174c2 0%, #eacfba 100%);
+    box-shadow: 0px 0px 20px #94849D;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #94849D;
+    box-shadow: white 0 0 10px;
+}

@@ -127,7 +127,12 @@
     font-size: 15px;
 }
 
-.cargo-senior{
-    min-width: 130px;
-    text-align: center;
+.cargo-senior {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #57415D;
+    border-radius: 50px;
+    color: #57415D;
+    white-space: nowrap;
 }

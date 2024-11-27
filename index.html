@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/oquee.css">
     <link rel="stylesheet" href="assets/css/chama.css">
     <link rel="stylesheet" href="assets/css/breve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -66,6 +69,45 @@
                     </li>
                 </ul>
             </div>
+            <button id="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div id="mobile-menu">
+
+                <button id="close-menu" class="close-btn">
+                    <i class="bi bi-x-lg"></i>
+
+                <div id="divider-menu"></div>
+
+                <ul id="mobile-nav-list">
+                    <li class="nav-item ">
+                        <a href="#inicio">O que é Núria?</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#caderno-title">Funcionalidades</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#desempenho-geral">Desempenho</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#produtividade">Produtividade</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#funcionalidade-geral">Mais funcionalidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#socios">Equipe</a>
+                    </li>
+                </ul>
+
+            </div>
+            
         </nav>
     </header>
 
@@ -85,7 +127,7 @@
     
                     <div class="conheca-nuria2">
                         <p>Se interessou?</p>
-                        <button class="contato-cadastro">Entre em contato!</button>
+                        <button class="contato-cadastro" onclick="window.location.href='contato.html'">Entre em contato!</button>
                     </div>
                     
                 </div>
@@ -131,7 +173,7 @@
 
                 <div id="slide-caderno">
                     <img id="imagem-grande" src="assets/img/caderno-grande.png" alt="">
-                    <img src="assets/img/anotacao-grande.png" alt="" style="display: none;">
+                    <img src="assets/img/urbanização.gif" alt="" style="display: none;">
                 </div>
             </div>
         </section>
@@ -158,7 +200,7 @@
                         
                     </div>
                     <div class="filtros" onclick="planner_inteligente()">
-                        <img src="assets/img/notinha.png" alt="">
+                        <img src="assets/img/filtro-img.png" alt="">
                         <div id="info-cont">
                             <h3>Filtros Inteligentes</h3>
                             <p>Encontre facilmente qualquer tarefa com o sistema de filtros dinâmicos.</p>
@@ -295,7 +337,7 @@
                                     <h2>Larissa Beatriz</h2>
                                 </div>
     
-                                <div class="cargo">
+                                <div class="cargo-senior">
                                     <p>Design Sênior</p>
                                 </div>
                             </div>
@@ -500,7 +542,7 @@
                                     <h2>Larissa Beatriz</h2>
                                 </div>
     
-                                <div class="cargo-l">
+                                <div class="cargo-senior">
                                     <p>Designer</p>
                                 </div>
                             </div>
@@ -535,12 +577,13 @@
                             <h3>Núria</h3>
                         </div>
                         <p>Organize seus planos, sua vida pessoal e <br> profissional e seus estudos de forma <br> simples e rápida!</p>
+                        
                         <div class="redes-sociais">
                             <a href="https://www.instagram.com/nuria_startup/">
-                                <img src="assets/img/instagram.png" alt="" width="20px">
+                                <img src="assets/img/instagram.png" alt="instagram" width="20px">
                             </a>
 
-                            <a href="https://www.instagram.com/nuria_startup/">
+                            <a href="">
                                 <img src="assets/img/linkedin.png" alt="" width = 20px>
                             </a>
                             
@@ -574,14 +617,15 @@
                     </ul> -->
 
                     <ul id="topico">
-                        <h4>Contatos</h4>
+                        <h4>Entre em contato</h4>
                         <div class="contato">
                             <img src="assets/img/contato.png" alt="" id="email-contato">
                             <li><a href="#">nuriastartup@gmail.com</a></li>
                         </div>
+                        <button id="contato-email" onclick="window.location.href='contato.html'">Clique Aqui</button>
                     </ul>
+            
                 </div>
-                
               
                 <div class="final-footer">
                     <div class="antes-divider">
