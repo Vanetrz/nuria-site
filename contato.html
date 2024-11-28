@@ -1,18 +1,109 @@
-92% de armazenamento usado … Se você atingir o limite, não será possível criar, editar ou fazer upload de arquivos. Aproveite 100 GB de armazenamento por R$ 7,99 R$ 1,99 por mês, durante 2 meses.
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" type="text/css" href="assets/css/contato.css" />
+    <title>Cadastro</title>
+    <link rel="icon" href="assets/img/nuria-logo.png" class="head-nuria">
+    <link rel="stylesheet" href="/assets/contato/mobile-ctt.css">
+    <link rel="stylesheet" href="assets/contato/menu.css">
+    <link rel="stylesheet" href="/index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="assets/contato/contato.css" />
+
+    <script src="assets/contato/contato.js"></script>
+    
 </head>
 <body>
+
+    <header>
+        <nav id="navBar">
+            <div id="navBar-links">
+                <div id="logo-header">
+                    <img src="/assets/contato/img/nuria-logo.png" alt="Logo Núria">
+                    <h2>Núria</h2>
+                </div>
+    
+                <ul id="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#oquee" >O que é</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="index.html#caderno-title">Funcionalidades</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="index.html#desempenho-geral">Desempenho</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="index.html#produtividade">Produtividade</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#funcionalidade-geral">Mais funcionalidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#socios">Equipe</a>
+                    </li>
+                </ul>
+
+                <button id="btn-menu" onclick="menu_sandwich_open()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+    
+                <div id="mobile-menu">                
+    
+                    <img id="close-menu" class="close-btn" src="assets/img/xmenu.png" onclick="menu_sandwich_close()">
+                        <i class="bi bi-x-lg"></i>
+    
+                    <div id="divider-menu"></div>
+    
+                    <ul id="mobile-nav-list">
+                        <li class="nav-item1">
+                            <a href="#info-nuria">O que é Núria?</a>
+                        </li>
+                        
+                        <li class="nav-item1">
+                            <a href="#caderno-title">Funcionalidades</a>
+                        </li>
+        
+                        <li class="nav-item1">
+                            <a href="#desempenho-geral">Desempenho</a>
+                        </li>
+        
+                        <li class="nav-item1">
+                            <a href="#produtividade">Produtividade</a>
+                        </li>
+    
+                        <li class="nav-item1">
+                            <a href="#funcionalidade-geral">Mais funcionalidades</a>
+                        </li>
+    
+                        <li class="nav-item1">
+                            <a href="#socios">Equipe</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
     <section class="formulario-div">
         <div id="formulario" class="hidden">
             <div class="formulario-titulo">
-                <h1>Fale</h1>
-                <p id="forms-brilho">CONOSCO</p>
+                <h1>Fale conosco!</h1>
             </div>
 
 
@@ -22,20 +113,21 @@
                 <h2>E-mail de contato</h2>
                 <input type="email" name="email" id="email" placeholder="" required>
 
-                <h2>Escreva algo</h2>
-                <textarea cols="30" rows="10" name="message" placeholder="" required></textarea>
-
-
-                <div class="btn-enviar">
-                    <button type="submit">ENVIAR</button>
-                </div>
-
+                <h2>Mensagem que deseja enviar</h2>
+                <textarea cols="30" rows="10" name="message" id="texto" placeholder="" required></textarea>
 
                
-            </form>                              
+            </form> 
+
+            <div class="btn-enviar">
+                <button type="submit">Enviar</button>
+            </div>
+                 
         </div>
     </section>
 
-    <a href="index.html">Voltar à Página Principal</a>
+                              <!-- onclick="window.location.href='contato.html'"  --> 
+
+
 </body>
 </html>

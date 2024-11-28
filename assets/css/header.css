@@ -1,16 +1,24 @@
 header {
     width: 100%;
-    padding: 10px 2%;
+    padding: 10px -5px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
 }
 
 #navBar {
+    margin: 0;
     width: 100%;
     display: flex;
+    margin: center;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding-left: 20px;
 }
 
-#navBar-links {
+#navBar-links { 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,6 +26,7 @@ header {
 }
 
 #logo-header {
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,12 +34,14 @@ header {
 }
 
 #logo-header h2 {
+    margin: 0;
     color: #816E8B;
     font-weight: 600;
     font-size: 30px;
 }
 
 #nav-list {
+    margin: 0;
     display: flex;
     list-style: none;
     gap: 30px;
@@ -84,33 +95,50 @@ header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
+#btn-menu{
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
 
 /*ESTILO DO MENU MOBILE*/
-
 #mobile-menu {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 65%;
-    height: 100%;
+    height: 100%; 
     background-color: rgba(255, 255, 255);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    z-index: 1000; 
+    z-index: 999; 
     gap: 30px; 
+
+    transition: .3s;
 }
 
+.mobile-menu.abrir-menu {
+    width: 60%;
+}
+
+.mobile-menu.abrir-menu ~ .overlay-menu {
+    display: block;
+}
 
 #mobile-menu.active {
     display: flex;
 }
 
 #mobile-menu button {
+    padding-bottom: 10px;
     background: none;
     border: none;
-    color: black;
+    color: 816E8B;
     font-size: 2rem;
     position: absolute;
     top: 0px;
@@ -122,13 +150,12 @@ header {
     list-style: none;
     padding: 0;
     text-align: left;
-    padding: auto   ;
-    
 }
 
 #mobile-menu .nav-item a {
     text-decoration: none;
-    color: black;
+    color: #57415D;
+    font-weight: 400;
     font-size: 1.1rem;
     margin: 10px 0;
     display: inline-block;
@@ -136,48 +163,24 @@ header {
 }
 
 #mobile-menu .nav-item a:hover {
-    color: #007BFF;
+    text-decoration: underline;
 }
 
 #divider-menu {
     border-top: 1px solid #9A8D9E;
-    width: 90%;
+    width: 80%;
     align-items: center;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 30px;
 }
 
-
-@media screen and (max-width: 1170px) {
-    #nav-list {
-        display: none;
-    }
-
-    #btn-menu {
-        display: block;
-        background: transparent;
-        border: none;
-        font-size: 1.5rem;
-        color: #816E8B;
-        cursor: pointer;
-    }
-}
-
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-}
-
-.close-btn:hover {
-    color: #007BFF;
-}
-
-.close-btn i {
-    font-size: 2rem;
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
 }

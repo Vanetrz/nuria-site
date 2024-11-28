@@ -1,0 +1,250 @@
+/* BODY CONTATO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#mobile-menu {
+    display: none;
+}
+
+* {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF9F6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/* CONTEUDO */
+#form-caixas {
+    width: 600px;
+}
+
+#form-caixas h2 {
+    color: #57415D;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#formulario h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#email, #nome {
+    font-weight: 500;
+    color: #57415D;
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+label {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: #57415D;
+    font-size: 12px;
+}
+
+/* FORMULARIO CADASTRO CONTATO*/
+
+.formulario-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF9F6;
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.formulario-titulo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-titulo h1 {
+    font-weight: 500;
+    color: #57415D;
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+form input,
+form textarea {
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #836E8B;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: "Montserrat", serif;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+form input:hover,
+form textarea:hover {
+    border-color: #94849D;
+}
+
+textarea {
+    margin-top: 20px;
+    height: 200px;
+    resize: none;
+}
+
+.btn-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-enviar button {
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(85deg, #b174c2 0%, #eacfba 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: ease 0.2s;
+    margin-bottom: 80px;
+}
+
+.btn-enviar button:hover {
+    background: linear-gradient(90deg, #8A56A2 0%, #D5A98F 100%);
+    box-shadow: 0px 0px 10px #ffffff;
+    color: #fff;
+    transition: 0.3s;
+    border: 1px solid #94849D;
+}
+
+header {
+    width: 100%;
+    padding: 10px 2%;
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navBar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+#logo-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#logo-header h2 {
+    color: #816E8B;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #816E8B;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-header {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    font-weight: 500;
+    gap: 10px;
+}
+
+#login {
+    background: none;
+    border: none;
+    color: #816E8B;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+#login:hover {
+    text-decoration: underline;
+}
+
+#cadastro {
+    background-color: #836E8B;
+    border: none;
+    border-radius: 50px;
+    width: 110px;
+    height: 30px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: ease 0.2s;
+}
+
+#cadastro:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}

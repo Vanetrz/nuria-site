@@ -136,3 +136,75 @@
     color: #57415D;
     white-space: nowrap;
 }
+
+@media screen and (max-width: 1170px) {
+    
+
+@media screen and (max-width: 768px) {
+    .socios-geral {
+        padding: 15px;
+    }
+
+    .socios-titulo h1 {
+        font-size: 24px; 
+    }
+
+    .socios-linha1 {
+        gap: 20px; 
+    }
+
+    #socios-caixa {
+        width: 140px;
+    }
+
+    .nome h2 {
+        font-size: 16px;
+    }
+
+    .cargo, .cargo-l {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .cargo-senior {
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .socios-geral {
+        margin-bottom: 30px; 
+    }
+
+    .socios-titulo {
+        gap: 2px;
+    }
+
+    .socios-linha1 {
+        gap: 15px;
+    }
+
+    #socios-caixa {
+        width: 120px; 
+    }
+
+    .socios-pessoa img {
+        max-width: 120px; 
+    }
+
+    .nome h2 {
+        font-size: 14px; 
+    }
+
+    .cargo, .cargo-l {
+        font-size: 10px;
+    }
+
+    .cargo-senior {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+}
+
+}

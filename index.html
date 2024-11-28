@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Núria</title>
-    <link rel="icon" href="assets/img/nuria-logo.png">
+    <link rel="icon" href="assets/img/nuria-logo.png" class="head-nuria">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/oquee.css">
     <link rel="stylesheet" href="assets/css/chama.css">
     <link rel="stylesheet" href="assets/css/breve.css">
+    <link rel="stylesheet" href="assets/css/mobile/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -29,29 +30,29 @@
 </head>
 
 <body>
-
-    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <!-- HEADER HEADER HEADER HEADE HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <button id="null-screen" onclick="menu_sandwich_close()"></button>
     <header>
         <nav id="navBar">
             <div id="navBar-links">
                 <div id="logo-header">
-                    <img src="assets/img/nuria-logo.png" alt="Logo Núria">
+                    <img src="/assets/contato/img/nuria-logo.png" alt="Logo Núria">
                     <h2>Núria</h2>
                 </div>
     
                 <ul id="nav-list">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a href="#inicio">Início</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#oquee">O que é</a>
+                        <a href="#oquee" >O que é</a>
                     </li>
     
                     <li class="nav-item">
                         <a href="#caderno-title">Funcionalidades</a>
                     </li>
-    
+                    
                     <li class="nav-item">
                         <a href="#desempenho-geral">Desempenho</a>
                     </li>
@@ -69,20 +70,20 @@
                     </li>
                 </ul>
             </div>
-            <button id="btn-menu">
+            <button id="btn-menu" onclick="menu_sandwich_open()">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-            <div id="mobile-menu">
+            <div id="mobile-menu">                
 
-                <button id="close-menu" class="close-btn">
+                <img id="close-menu" class="close-btn" src="assets/img/xmenu.png" onclick="menu_sandwich_close()">
                     <i class="bi bi-x-lg"></i>
 
                 <div id="divider-menu"></div>
 
                 <ul id="mobile-nav-list">
                     <li class="nav-item ">
-                        <a href="#inicio">O que é Núria?</a>
+                        <a href="#info-nuria">O que é Núria?</a>
                     </li>
                     
                     <li class="nav-item">
@@ -107,7 +108,6 @@
                 </ul>
 
             </div>
-            
         </nav>
     </header>
 
@@ -115,19 +115,19 @@
     <button id="seta-cima">
         <img src="assets/img/seta-cima.png" alt="">
     </button>
-
+    
     <!-- INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO INICIO -->
     <main class="geral">
         <section class="inicio">
             <div id="inicio-div">
                 <div class="conheca-nuria">
-                    <h1>Conheça mais sobre nosso aplicativo <span> Núria</span>!</h1>
+                    <h1>Conheça mais sobre<br>nosso aplicativo <span> Núria</span>!</h1>
     
                     <h4>Organize seus planos, sua vida pessoal e profissional e seus estudos de forma simples e rápida.</h4>
     
                     <div class="conheca-nuria2">
-                        <p>Se interessou?</p>
-                        <button class="contato-cadastro" onclick="window.location.href='contato.html'">Entre em contato!</button>
+                        <p>Em breve...</p>
+                        <!-- <button class="contato-cadastro">Entre em contato!</button> -->
                     </div>
                     
                 </div>
@@ -157,27 +157,27 @@
         <!-- CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO CADERNO -->
         <section>
             <div id="caderno-title">
-                <h1>Nossas <span>FUNCIONALIDADES!</span></h1>
+                <h1>Nossas <br><span>FUNCIONALIDADES!</span></h1>
                 <img src="assets/img/Núria feliz.svg" alt="Emoji">
             </div>
-
+        
             <div id="caderno-geral">
                 <div id="caderno-esquerda">
-                    <h1>Faça anotações criando no seu <span>Caderno</span></h1>
-                    <p>Monitore sua produtividade com <br> o score diário, uma pontuação <br> que reflete o seu desempenho <br> ao longo do dia.</p>
+                    <h1>Matérias e anotações sempre em ordem com o <span>Caderno</span></h1>
+                    <p>Monitore sua produtividade com o score diário, uma pontuação que reflete o seu desempenho ao longo do dia.</p>
                     <div id="caderno-img">
                         <img id="caderno-select" src="assets/img/caderno_roxo.png" alt="Caderno" onclick="caderno_select()">
                         <img id="anotacoes-select" src="assets/img/anotacoes_branco.png" alt="Anotações" onclick="anotacoes_select()">
                     </div>
                 </div>
-
+        
                 <div id="slide-caderno">
-                    <img id="imagem-grande" src="assets/img/caderno-grande.png" alt="">
+                    <img id="imagem-grande" src="assets/img/caderno-animação.gif" alt="">
                     <img src="assets/img/urbanização.gif" alt="" style="display: none;">
                 </div>
             </div>
-        </section>
 
+        </section>
         <!--  PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER PLANNER  -->
         <section>
             <div class="planner-geral">
@@ -187,11 +187,11 @@
                     intuitiva que permite visualizar tarefas diárias, semanais ou mensais de maneira
                     clara e personalizada.</p>
                 </div>
-                <img id="image-planner" src="assets/img/planner.png" alt="">
+                <img id="image-planner" src="assets/img/planner.gif" alt="" width="450px" height="680px">
     
-                <div class="container-planner" onclick="planner_desempenho()">
-                    <div class="desempenho-cont">
-                        <img src="assets/img/pczinho.png" alt="">
+                <div class="container-planner">
+                    <div id="button-desempenho" class="desempenho-cont" onclick="planner_desempenho()" onmouseenter="planner_button_hover(this)" onmouseleave="planner_button_nohover()">
+                        <img src="assets/img/pczinho.png" alt="" class="pczinho">
                         <div id="info-cont">
                             <h3>Acompanhamento de <br> Desempenho</h3>
                             <p>Um gráfico circular ao redor do dia mostra o progresso das suas tarefas e,
@@ -199,15 +199,15 @@
                         </div>
                         
                     </div>
-                    <div class="filtros" onclick="planner_inteligente()">
-                        <img src="assets/img/filtro-img.png" alt="">
+                    <div id="button-filtro" class="filtros" onclick="planner_inteligente()" onmouseenter="planner_button_hover(this)" onmouseleave="planner_button_nohover()">
+                        <img src="assets/img/filtro-img.png" alt="" class="filtro-img">
                         <div id="info-cont">
                             <h3>Filtros Inteligentes</h3>
                             <p>Encontre facilmente qualquer tarefa com o sistema de filtros dinâmicos.</p>
                         </div>
                     </div>
-                    <div class="caderno-digital" onclick="planner_integracao()">
-                        <img src="assets/img/notinha.png" alt="">
+                    <div id="button-caderno" class="caderno-digital" onclick="planner_integracao()" onmouseenter="planner_button_hover(this)" onmouseleave="planner_button_nohover()">
+                        <img src="assets/img/notinha.png" alt="" class="notinha">
                         <div id="info-cont">
                             <h3>Integração com o Caderno <br> Digital</h3>
                             <p>Conecte suas atividades às matérias e tópicos do caderno para manter tudo sincronizado.</p>
@@ -222,7 +222,12 @@
             <div class="chama-geral">
                 <img src="assets/img/chama.png" alt="" width="1200" height="auto">
             </div>
+            <div class="chama-geral-mobile">
+                <img src="assets/img/chama-mobile.png" alt="">
+            </div>
         </section>
+
+        
 
         <!-- DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO DESEMPENHO -->
         
@@ -250,8 +255,8 @@
     
                 <div class="produtividade-direita">
                     <h1>Alcance uma maior <br><span>produtividade</span></h1>
-                    <p>Monitore sua produtividade com <br> o score diário, uma pontuação <br> que reflete o seu desempenho <br> ao longo do dia.</p>
-                    <img src="assets/img/score.png" alt=""  width="543px" height="271px">
+                    <p>Monitore sua produtividade com o score diário, uma pontuação que reflete o seu desempenho ao longo do dia.</p>
+                    <img src="assets/img/score.png" alt=""  width="543px" height="271px" class="velocipede">
                 </div>
             </div>
         </section>
@@ -290,7 +295,10 @@
                 <div class="embreve-esquerdo">
                     <h1><span>EM BREVE</span><Br>o seu App</h1>
                     <h1 class="nome-nuria"><span>NÚRIA!</span></h1>
-                     <button id="por-dentro">Fique por dentro</button>
+                    <a href="https://www.instagram.com/nuria_startup/">
+                        <button id="por-dentro">Fique por dentro</button>
+                    </a>
+                    
                 </div>
                 <div class="embreve-direito">
                     <img src="assets/img/celular.png" alt="" id="celular">
@@ -316,11 +324,11 @@
                         <div class="socios-linha1">
                             <div id="socios-caixa" class="hidden-socios">
                                 <div class="socios-pessoa">
-                                    <img src="assets/img/vanessa.png" alt="#">
+                                    <img src="assets/img/giulia.png" alt="#">
                                 </div>
     
                                 <div class="nome">
-                                    <h2>Vanessa Trezena</h2>
+                                    <h2>Giulia Barbachan</h2>
                                 </div>
     
                                 <div class="cargo">
@@ -338,21 +346,21 @@
                                 </div>
     
                                 <div class="cargo-senior">
-                                    <p>Design Sênior</p>
+                                    <p>CDO</p>
                                 </div>
                             </div>
     
                             <div id="socios-caixa" class="hidden-socios">
                                 <div class="socios-pessoa">
-                                    <img src="assets/img/giulia.png" alt="#">
+                                    <img src="assets/img/vanessa.png" alt="#">
                                 </div>
     
                                 <div class="nome">
-                                    <h2>Giulia Barbachan</h2>
+                                    <h2>Vanessa Trezena</h2>
                                 </div>
     
                                 <div class="cargo">
-                                    <p>CDO</p>
+                                    <p>CIO</p>
                                 </div>
                             </div>
     
@@ -396,7 +404,7 @@
                                 </div>
     
                                 <div class="cargo">
-                                    <p>CIO</p>
+                                    <p>CTO</p>
                                 </div>
                             </div>
     
@@ -582,10 +590,6 @@
                             <a href="https://www.instagram.com/nuria_startup/">
                                 <img src="assets/img/instagram.png" alt="instagram" width="20px">
                             </a>
-
-                            <a href="">
-                                <img src="assets/img/linkedin.png" alt="" width = 20px>
-                            </a>
                             
                         </div>
                     </ul>
@@ -622,7 +626,7 @@
                             <img src="assets/img/contato.png" alt="" id="email-contato">
                             <li><a href="#">nuriastartup@gmail.com</a></li>
                         </div>
-                        <button id="contato-email" onclick="window.location.href='contato.html'">Clique Aqui</button>
+                        <!-- <button id="contato-email" onclick="window.location.href='contato.html'">Clique Aqui</button> -->
                     </ul>
             
                 </div>
@@ -651,6 +655,7 @@
         </footer>
     </main>
 
+    
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>

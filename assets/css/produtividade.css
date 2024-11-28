@@ -1,3 +1,4 @@
+/* PRODUTIVIDADE DESKTOP */
 #produtividade {
     display: flex;
     flex-direction: row;
@@ -5,8 +6,10 @@
     align-items: center;
     gap: 50px; 
     margin-top: 80px;
-    max-width: 14000px;
-    padding-top: 200px
+    max-width: 1400px;
+    padding-top: 200px;
+    margin-left: 60px;
+    margin: 0 auto
 }
 
 #produtividade span {
@@ -24,9 +27,8 @@
 .produtividade-direita {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
     justify-content: center;
-
+    align-items: center;
 }
 
 .produtividade-direita h1 {
@@ -37,10 +39,13 @@
 
 .produtividade-direita p {
     color: #94849D;
+    width: 450px;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 85px; 
+    align-self: flex-start;
+    margin-left: 20px;
 }
 
 .produtividade-direita img {
@@ -48,10 +53,13 @@
     height: auto;
 }
 
+/* CADERNO DESKTOP */
 #caderno-title {
     display: flex;
-    align-items: stretch;
-    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
 }
 
 #caderno-title h1 {
@@ -66,13 +74,14 @@
 }
 
 #caderno-title img {
+    padding-top: 45px;
     width: 50px;
     margin-left: 10px;
 }
 
 #caderno-geral {
     display: flex;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 200px;
 }
 
@@ -95,6 +104,7 @@
 }
 
 #caderno-esquerda p {
+    width: 500px;
     color: #94849D;
     font-size: 24px;
     font-weight: 500;
@@ -108,7 +118,7 @@
     gap: 20px;
 }
 
-#caderno-img img{
+#caderno-img img {
     width: 250px;
     height: auto;
 }
@@ -124,33 +134,3 @@
     cursor: pointer;
 }
 
-
-@media screen and (max-width: 768px) {
-    #caderno-geral {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    #caderno-title h1 {
-        font-size: 32px;
-    }
-
-    #caderno-esquerda h1 {
-        font-size: 28px;
-        width: 100%;
-    }
-
-    #caderno-esquerda p {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    #caderno-img img {
-        width: 150px;
-    }
-
-    #slide-caderno img {
-        width: 100%;
-    }
-}

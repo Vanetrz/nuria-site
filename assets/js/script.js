@@ -1,5 +1,6 @@
 const seta = document.querySelector('#seta')
 const carregaimg = ["assets/img/anotacao_branco.png", "assets/img/caderno_roxo.png", "assets/img/anotacao_roxo.png", "assets/img/caderno_branco.png"];
+const carregagif = ["assets/img/"]
 
 
 seta.addEventListener('click', () => {
@@ -23,14 +24,16 @@ setaCima.addEventListener ('click', () => {
     })
 })
 
+
+
+//PLANNER----------------------------------------------------
 //AREA DAS ANOTAÇÕES E CADERNO
 const caderno = "caderno";
 const anotacoes = "anotacoes";
 var modo_caderno_anotacao = caderno;
 
-function caderno_select()
-{
-    //Caderno selecionado
+function caderno_select() {
+    // Caderno selecionado
     let anotacoes_select = document.getElementById("anotacoes-select");
     let caderno_select = document.getElementById("caderno-select");
     let imagem_grande = document.getElementById("imagem-grande");
@@ -38,25 +41,25 @@ function caderno_select()
     anotacoes_select.src = "assets/img/anotacoes_branco.png";
     caderno_select.src = "assets/img/caderno_roxo.png";
 
-    imagem_grande.src = "assets/img/urbanização.gif";
+    imagem_grande.src = "assets/img/caderno-animação.gif";
 
-    modo_caderno_anotacao = caderno; 
+    modo_caderno_anotacao = caderno;
 }
 
-function anotacoes_select()
-{
-    //Anotações selecionado
+function anotacoes_select() {
+    // Anotações selecionado
     let anotacoes_select = document.getElementById("anotacoes-select");
     let caderno_select = document.getElementById("caderno-select");
     let imagem_grande = document.getElementById("imagem-grande");
-    
+
     anotacoes_select.src = "assets/img/anotacoes_roxo.png";
     caderno_select.src = "assets/img/caderno_branco.png";
 
-    imagem_grande.src = "assets/img/anotacao-grande.png";
+    imagem_grande.src = "assets/img/urbanização.gif";
 
     modo_caderno_anotacao = anotacoes;
 }
+
 
 //Planner mudando de imagem
 const desempenho = "desempenho";
@@ -70,7 +73,8 @@ function planner_desempenho()
 {
     //Desempenho
     imagem_grande.src = "assets/img/planner.gif";
-    imagem_grande.style.height = "754px";
+    imagem_grande.style.height = "auto";
+    imagem_grande.style.width = "480px";
 
     //------STYLE MOMENTS-------
     ///AVISO!!! OS ELEMENTOS ESTÃO SENDO REQUISITADOS PELO NOME DO ID!!!! NÃO ESQUECER POR FAVOR!
@@ -96,8 +100,9 @@ function planner_desempenho()
 function planner_inteligente()
 {
     //Filtrar
-    imagem_grande.src = "assets/img/animacao.gif";
-    imagem_grande.style.height = "754px";
+    imagem_grande.src = "assets/img/filtrar.gif";
+    imagem_grande.style.height = "auto";
+    imagem_grande.style.width = "480px";
     
 
     //------STYLE MOMENTS-------
@@ -125,7 +130,8 @@ function planner_integracao()
 {
     //Calendario
     imagem_grande.src = "assets/img/calendario.gif";
-    imagem_grande.style.height = "754px";
+    imagem_grande.style.height = "auto";
+    imagem_grande.style.width = "480px";
 
     //------STYLE MOMENTS-------
     ///AVISO!!! OS ELEMENTOS ESTÃO SENDO REQUISITADOS PELO NOME DO ID!!!! NÃO ESQUECER POR FAVOR!
@@ -147,6 +153,7 @@ function planner_integracao()
     //Setando o select como true para ele não alterar mais!
     select = true;
 }
+//END PLANNER----------------------------------------------------
 
 
 
@@ -157,17 +164,16 @@ function planner_integracao()
 
 
 
-
-///SUBSTITUIÇÃO DO HOVER CSS ABAIXO. NÃO TOCAR!!!!!!!!!!!!!!
+///SUBSTITUIÇÃO DO HOVER CSS ABAIXO. NÃO TOCAR!!!!!!!!!!!!!!-------------
 var select = false;
 
-function planner_button_hover(nome)
+function planner_button_hover(object)
 {
     //Função HOVER
     if(select) return;
 
     let nomes = [document.getElementById("button-desempenho"), document.getElementById("button-filtro"), document.getElementById("button-caderno")];
-    let element = document.getElementById(nome);
+    let element = document.getElementById(object.id);
 
     //ANIM
     for(var i=0; i<nomes.length; i++)
@@ -182,7 +188,7 @@ function planner_button_hover(nome)
     
 }
 
-function planner_button_nohover(nome)
+function planner_button_nohover()
 {
     //Função HOVER
     if(select) return;
@@ -196,6 +202,7 @@ function planner_button_nohover(nome)
         nomes[i].style.transform = "scale(1)";
     }
 }
+//END-------------------------------------------------------------
 
 
 
@@ -206,8 +213,7 @@ function planner_button_nohover(nome)
 
 
 
-
-//ANIMAÇÕESS
+//ANIMAÇÕESS-----------------------------------------------
 ScrollReveal().reveal('.conheca-nuria', {
     origin: 'left',
     duration: 2000,
@@ -324,27 +330,44 @@ ScrollReveal().reveal('#ultimo-divider', {
     opacity: 0,
     duration: 2000,
 })
+//END ANIMAÇÕESS-----------------------------------------------
 
 
-/*JAVA SCRIPT DO HEADER */
-
+// JAVA SCRIPT DO HEADER-----------------------------------------------
 document.addEventListener('DOMContentLoaded', function () {
-    const btnMenu = document.getElementById('btn-menu');
     const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
+    const null_screen = document.getElementById('null-screen');
+    const itens_menu = document.getElementsByClassName("nav-item");
+    const overlay = document.getElementById("overlay-menu")
 
-    btnMenu.addEventListener('click', function () {
-        mobileMenu.classList.add('active');
+    //Fechar o menu sandwich quando um item dele for clicado!
+    for(var i = 0; i < itens_menu.length; i++)
+    {
+        var item = itens_menu.item(i);
+        item.addEventListener('click', function ()
+    {
+        mobileMenu.style.display = "none";
+        null_screen.style.display = "none";
     });
-
-    closeMenu.addEventListener('click', function () {
-        mobileMenu.classList.remove('active');
-    });
-
-    const navLinks = document.querySelectorAll('#mobile-nav-list .nav-item a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-            mobileMenu.classList.remove('active');
-        });
-    });
+    }
 });
+
+//FUNÇÃO DE ABRIR O MENU SANDWICH!
+function menu_sandwich_open()
+{
+    console.log("Abriu porra!");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const nullscreen = document.getElementById("null-screen");
+    mobileMenu.style.display = "flex";
+    nullscreen.style.display = "flex";
+}
+
+//FUNÇÃO DE FECHAR O MENU SANDWICH!
+function menu_sandwich_close()
+{
+    const mobileMenu = document.getElementById("mobile-menu");
+    const nullscreen = document.getElementById("null-screen");
+    mobileMenu.style.display = "none";
+    nullscreen.style.display = "none";
+}
+//END JAVA SCRIPT DO HEADER-----------------------------------------------

@@ -47,6 +47,7 @@
     color: #57415D;
     font-size: 52px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .conheca-nuria span{
@@ -68,7 +69,9 @@
 }
 
 .conheca-nuria2 p {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 60%;
 }
 
 .contato-cadastro {
@@ -96,45 +99,4 @@
 
 .fa-solid {
     padding-top: 30px;
-}
-
-/* INICIO NO MOBILE */
-@media screen and (max-width: 768px) {
-    #inicio-div {
-        flex-direction: column;
-        margin: 0px 20px;
-        text-align: center;
-    }
-
-    .conheca-nuria {
-        width: 100%;
-    }
-
-    .conheca-nuria h1 {
-        font-size: 36px;
-    }
-
-    .conheca-nuria span {
-        font-size: 30px;
-    }
-
-    .conheca-nuria h4 {
-        font-size: 14px;
-    }
-
-    .contato-cadastro {
-        width: 70%;
-        height: 40px;
-        font-size: 14px;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .celular img {
-        display: none;
-    }
-
-    #seta {
-        width: 30px;
-    }
 }

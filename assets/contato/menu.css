@@ -1,0 +1,147 @@
+/*ESTILO DO MENU MOBILE*/
+#mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%; 
+    background-color: rgba(255, 255, 255);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 999; 
+    gap: 30px; 
+
+    transition: .3s;
+}
+
+.mobile-menu.abrir-menu {
+    width: 60%;
+}
+
+.mobile-menu.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+#mobile-menu.active {
+    display: flex;
+}
+
+#mobile-menu button {
+    background: none;
+    border: none;
+    color: 816E8B;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#mobile-menu .nav-item a {
+    text-decoration: none;
+    color: 57415D;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#mobile-menu .nav-item a:hover {
+    text-decoration: underline;
+}
+
+#divider-menu {
+    border-top: 1px solid #9A8D9E;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+@media screen and (max-width: 730px){
+    /* HEADER------------------------------------------ */
+    .nav-item1{
+        display: none;
+    }
+
+    #btn-menu {
+        font-size: 3;
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 1.8rem;
+        color: #816E8B;
+        cursor: pointer;
+        margin-right: 7%;
+        margin-bottom: 6%;
+        opacity: 80;
+    }
+
+    #logo-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5px;
+        margin-left: 10%;
+    }
+    
+    #logo-header h2{
+        align-self: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 24px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        flex-direction: row;
+        align-self: flex-start;
+    }
+
+    .close-btn:hover {
+        color: none;
+        text-decoration: underline;
+    }
+
+    .close-btn i {
+        font-size: 2rem;
+    }
+
+    #null-screen
+    {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+        border: none;
+        z-index: 1;
+    }
+
+}

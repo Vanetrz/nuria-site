@@ -1,0 +1,587 @@
+@media screen and (max-width: 730px) {
+
+    /* HEADER------------------------------------------ */
+    #nav-list {
+        display: none;
+    }
+
+
+    #btn-menu {
+        font-size: 3;
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 1.8rem;
+        color: #816E8B;
+        cursor: pointer;
+        margin-right: 7%;
+        margin-bottom: 6%;
+        opacity: 80;
+    }
+
+    #logo-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5px;
+        margin-left: 10%;
+    }
+    
+    #logo-header h2{
+        align-self: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 24px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        flex-direction: row;
+        align-self: flex-start;
+    }
+
+    .close-btn:hover {
+        color: none;
+        text-decoration: underline;
+    }
+
+    .close-btn i {
+        font-size: 2rem;
+    }
+
+    #null-screen
+    {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+        border: none;
+        z-index: 1;
+    }
+
+    /* INICIO------------------------------------------- */
+    #inicio-div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+        margin-top: -120px;
+    }
+
+    .conheca-nuria {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    
+    .conheca-nuria h1 {
+        font-size: 28px;
+    }
+    
+    .conheca-nuria span {
+        font-size: 30px;
+    }
+    
+    .conheca-nuria h4 {
+        font-size: 15px;
+    }
+    
+    .conheca-nuria p {
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .conheca-nuria2 p {
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 60%;
+    }
+    
+    /* .contato-cadastro {
+        width: 155px;
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 50px;
+    } */
+
+    .celular img {
+        padding-top: 30px;
+        width: 300px;
+    }
+
+    #seta {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    #seta-cima{
+        display: none;
+    }
+
+    /* CADERNO-------------------------- */
+
+    #caderno-geral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 170px 0 100px 0;
+    }
+    #caderno-title {
+        margin-bottom: -100px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #caderno-title h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 90px;
+        font-size: 28px;
+    }
+
+    #caderno-title img {
+        display: none;
+    }   
+
+    #caderno-esquerda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #caderno-esquerda h1 {
+        max-width: 70%;
+        font-size: 28px;
+        text-align: flex-start;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #caderno-esquerda p {
+        max-width: 70%;
+        padding-bottom: 0;
+        display: flex;
+        font-size: 14px;
+        text-align: flex-start;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #caderno-img img {
+        width: 120px;
+        height: auto;
+    }
+
+    #caderno-select{
+        margin-left: 195px;
+
+    }
+
+    #slide-caderno img {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+    }
+    
+    /* PLANNER--------------------------- */
+    .planner-geral {
+        max-width: 100%;
+        flex-direction: column;
+        align-self: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-planner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 120%;
+        margin: 0;
+    }
+
+    .info-planner h1 {
+        font-size: 28px;
+        width: 100%;
+        width: 440px;
+        text-align: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .info-planner p {
+        width: 100%;
+        width: 440px;
+        text-align: flex-start; 
+        align-items: flex-start;
+        padding-bottom: 20px;
+        font-size: 14px; 
+    }
+
+    .planner-geral img {
+        width: 100%;
+        max-width: 450px; 
+        height: auto;
+        margin-bottom: 20px;
+        max-width: 300px; 
+    }
+
+    .desempenho-cont, .filtros, .caderno-digital {
+        width: 370px;
+        height: 120px;
+        
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        margin: 7px;
+        border-radius: 20px;
+    }
+
+    #info-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #info-cont h3 {
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        width: 100%;
+    }
+
+    #info-cont p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .desempenho-cont img, 
+    .filtros img, 
+    .caderno-digital img {
+        display: none;
+    }
+       
+
+    /* CHAMA-------------------------------- */
+    .chama-geral-mobile {
+        max-width: 100%;
+        width: 520px;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    /* PRODUTIVIDADE-------------------------- */
+
+    #produtividade {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: flex-start;
+        gap: 35px;
+        margin-top: 70px;
+        padding: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .produtividade-esquerda img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .produtividade-direita {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .produtividade-direita h1 {
+        width: 100%;
+        font-size: 28px;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .produtividade-direita p {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        margin-left: -2px;
+    }
+
+    .produtividade-direita img {
+        max-width: 80%;
+    }
+
+    .produtividade-direita .velocipede{
+        display: none;
+    }
+
+    /* +FUNCIONALIDADES-------------------------------------- */
+
+    #titulo-funcionalidade {
+        padding: 100px 0 50px 0;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo-funcionalidade h1 {
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cont-func {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #funcao {
+        width: 265px;
+        height: auto;
+        padding: 20px;
+    }
+
+    #funcao h3 {
+        font-size: 20px;
+    }
+
+    #funcao p {
+        font-size: 14px;
+    }
+
+    .vela{
+        width: 33px;
+        height: 64px;
+        margin-top: 0;
+    }
+
+    .personalizar{
+        width: 55px;
+        height: 54px;
+        margin-top: 0;
+    }
+
+    .xpnuria{
+        width: 52px;
+        height: 60px;
+        margin-top: 0;;
+    }
+
+    
+
+
+    /* EQUIPE-------------------------------------- */
+    .socios-geral {
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: -100px;
+    }
+
+    .socios-titulo {
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        gap: 5px;
+        margin-bottom: 50px;
+    }
+
+    .socios-titulo h1 {
+        font-size: 30px;
+    }
+
+    .socios-linha1 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #socios-caixa {
+        width: 160px;
+        height: auto;
+    }
+
+    .socios-pessoa img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .nome h2 {
+        width: 100%;;
+        font-size: 15px;
+        width: auto;
+        padding: 5px 0;
+    }
+
+    .cargo, .cargo-l {
+        font-size: 13px;
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .cargo-senior {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+
+    /* FOOTER-------------------------------------- */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .info-geral {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0; 
+        gap: 20px;
+        margin-left: 10px;
+    }
+    
+    .logo-nome {
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+    
+    .logo-nome img {
+        width: 40px;
+    }
+    
+    .logo-nome h3 {
+        font-size: 24px;
+    }
+    
+    .container ul p {
+        margin-top: 5;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    .container ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .redes-sociais img {
+        width: 22px;
+        margin-right: 8px;
+    }
+    
+    #topico h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    #topico li {
+        font-size: 14px;
+        margin-bottom: px;
+    }
+    
+    #topico a {
+        text-decoration: none;
+        color: #57415D;
+    }
+    
+    .contato {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #email-contato {
+        width: 20px;    
+    }
+    
+    #contato-email {
+        display: none;
+    }
+    
+    .info-geral #topico h4{
+        display: none;
+    }
+
+    .final-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .antes-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;  
+        width: 100%;
+    }
+
+    .direito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #divider-footer {
+        width: 100%;
+        border-top: 1px solid #9A8D9E;
+        margin-top: 8px;
+    }
+
+}    
