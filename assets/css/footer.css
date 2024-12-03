@@ -76,7 +76,7 @@
 
 #divider-footer {
     border-top: 1px solid #9A8D9E;
-    width: 1510px;
+    width: 1190px;
     align-items: center;
     justify-content: center;
     margin-top: 8px;
@@ -85,11 +85,14 @@
 .direito {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 2px;
 }
 
 .direito img {
-    width: 12px;
+    width: 11px;
     height: 12px;
+    padding-top: 1px;
 }
 
 .direito p {
@@ -97,7 +100,7 @@
 }
 
 .final-footer .antes-divider a {
-    margin-left: 40px;
+    margin: 0;
     text-decoration: none;
     color: #57415D;
     font-size: 12px;
@@ -118,12 +121,34 @@
 }
 
 .final-footer .antes-divider{
+    display: flex;
+    flex-direction: row;
     align-self: flex-end;
+
+    gap: 30px;
 }
 
 .final-footer .direito{
     align-self: flex-end;
-    margin-top: 8px;
+    align-content: initial;
+    padding-top: -10px;
+}
+
+.final-direito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+
+    justify-content:
+}
+
+.direito-logo img {
+    display: flex;
+    width: 86px;
+    height: auto;
+    margin-top: 12px;
 }
 
 .redes-sociais img {
