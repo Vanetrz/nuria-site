@@ -82,23 +82,6 @@
     margin-top: 8px;
 }
 
-.direito {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2px;
-}
-
-.direito img {
-    width: 11px;
-    height: 12px;
-    padding-top: 1px;
-}
-
-.direito p {
-    font-size: 12px;
-}
-
 .final-footer .antes-divider a {
     margin: 0;
     text-decoration: none;
@@ -129,26 +112,46 @@
 }
 
 .final-footer .direito{
-    align-self: flex-end;
-    align-content: initial;
-    padding-top: -10px;
+    align-self: center;
+    align-content: center;
 }
 
 .final-direito {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
 
     width: 100%;
 
-    justify-content:
+    margin-top: 8px;
 }
 
 .direito-logo img {
     display: flex;
     width: 86px;
     height: auto;
-    margin-top: 12px;
+}
+
+.direito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+    margin-top: -7px;
+    gap: 2px;
+}
+
+.direito img {
+    width: 11px;
+    height: 12px;
+    padding-top: 1px;
+}
+
+.direito p {
+    font-size: 12px;
 }
 
 .redes-sociais img {
